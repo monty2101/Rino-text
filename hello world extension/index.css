@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dashboard {
+    display: flex;
+    height: 100vh;
+    background-color: #1a1a2e; /* Dark blackish background */
+    color: #ffffff; /* White text for contrast */
+    font-family: 'Arial', sans-serif;
+}
+
+.sidebar {
+    width: 200px;
+    padding: 20px;
+    background-color: #16213e; /* Slightly lighter black for sidebar */
+    border-right: 1px solid #4a4a7a; /* Purpleish border */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar h3 {
+    color: #a2d2ff; /* Light purple for headings */
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.sidebar button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #7209b7; /* Rich purple for buttons */
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.sidebar button:hover {
+    background-color: #560bad; /* Darker purple on hover */
+    transform: translateY(-2px);
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #1a1a2e; /* Match main background */
+}
+
+.snippet-list {
+    margin-bottom: 20px;
+}
+
+.snippet-list h2 {
+    color: #a2d2ff; /* Light purple for headings */
+    margin-bottom: 15px;
+}
+
+#snippetList {
+    list-style: none;
+    padding: 0;
+    background-color: #16213e; /* Same as sidebar for consistency */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#snippetList li {
+    padding: 10px;
+    border-bottom: 1px solid #4a4a7a; /* Purpleish border */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#snippetList li:hover {
+    background-color: #2b2d42; /* Slightly lighter black on hover */
+}
+
+#newSnippet {
+    padding: 10px 20px;
+    background-color: #7209b7; /* Rich purple */
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#newSnippet:hover {
+    background-color: #560bad; /* Darker purple on hover */
+    transform: translateY(-2px);
+}
+
+.editor {
+    background-color: #16213e; /* Dark background for editor */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.editor input, .editor textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #4a4a7a; /* Purpleish border */
+    border-radius: 5px;
+    background-color: #2b2d42; /* Darker input background */
+    color: #ffffff;
+    font-size: 1em;
+}
+
+.editor textarea {
+    height: 200px;
+    resize: vertical;
+}
+
+#saveSnippet {
+    padding: 10px 20px;
+    background-color: #7209b7; /* Rich purple */
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#saveSnippet:hover {
+    background-color: #560bad; /* Darker purple on hover */
+    transform: translateY(-2px);
+}
+
+/* Add some subtle animations and shadows for beauty */
